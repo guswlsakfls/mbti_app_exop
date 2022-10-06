@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "mbti_app_expo",
+    "name": "mbti face",
     "slug": "mbti_app_expo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,16 +18,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hyujo.mbtiFace",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.hyujo.mbtiFace",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87680e8e-1e76-4b3f-9e25-0f2c12865681"
+      }
     }
   }
 }
